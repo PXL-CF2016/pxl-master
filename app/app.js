@@ -59,9 +59,10 @@
     //   return $http.get(API + '/auth/quote')
     // }
 
-    self.register = function(username, password) {
-      return $http.post(API + '/auth/register', {
+    self.register = function(username, email, password) {
+      return $http.post(API, {
         username: username,
+        email: email,
         password: password
       })
     }
@@ -80,7 +81,7 @@
         .then(handleRequest, handleRequest)
     }
     self.register = function() {
-      user.register(self.username, self.password)
+      user.register(self.username, self.email, self.password)
         .then(handleRequest, handleRequest)
     }
     self.logout = function() {
@@ -95,7 +96,7 @@
   .factory('authInterceptor', authInterceptor)
   .service('user', userService)
   .service('auth', authService)
-  .constant('API', 'http://test-routes.herokuapp.com')
+  .constant('API', 'http://ec2-52-37-2-103.us-west-2.compute.amazonaws.com/api/v1.0/registration/')
   .config(function($httpProvider) {
     $httpProvider.interceptors.push('authInterceptor');
   })
