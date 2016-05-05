@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="pxlMstr">
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <title>PXL MSTR</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-    <script src="app.js"></script>
+    <style>.ng-cloak {display: none !important;}</style>
   </head>
-  <body ng-app="pxlMstr" ng-controller="Main as main">
-    <h1>PXL MSTR</h1>
 
-    <!-- INPUT FORM -->
-    <input type="text" ng-model="main.username" placeholder="username">
-    <input type="password" ng-model="main.password" placeholder="password">
-    <input type="email" ng-model="main.email" placeholder="email">
+  <body>
+    <header>
+      <div class="logo"></div>
+        <h1 class="title">PXL MSTR</h1>
+        <custom-nav></custom-nav>
+    </header>
+    <main ng-view>
+      <h1 class="main-title">LED Matrix Control</h1>
+    </main>
+    <footer></footer>
 
-    <button ng-click="main.register()">Register</button>
-    <button ng-click="main.login()">Login</button>
-    <button ng-click="main.logout()" ng-show="main.isAuthed()">Logout</button>
+    <script src="./bundle.js" type="text/javascript"></script>
   </body>
 </html>
