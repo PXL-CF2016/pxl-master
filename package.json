@@ -1,39 +1,35 @@
 {
-  "name": "pxl-master",
+  "name": "pxl-sandbox",
   "version": "1.0.0",
-  "description": "This repo is for our open source Python/Javascript project that allows users  to manipulate an LED reader board wirelessly using a Raspberry Pi 3 and a  32x128 LED matrix.",
-  "main": "cli-server.js",
-  "directories": {
-    "test": "test"
-  },
+  "description": "",
+  "main": "client-server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PXL-CF2016/pxl-master.git"
-  },
-  "keywords": [
-    "pxl",
-    "LED",
-    "Python",
-    "Django",
-    "Angular",
-    "Javascript"
-  ],
   "author": "David Heyduck <heyduckd@gmail.com> (http://davidheyduck.com)",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/PXL-CF2016/pxl-master/issues"
-  },
-  "homepage": "https://github.com/PXL-CF2016/pxl-master#readme",
   "devDependencies": {
-    "angular": "^1.5.5",
-    "angular-route": "^1.5.5",
-    "gulp-eslint": "^2.0.0"
+    "checklist-model": "^0.9.0",
+    "gulp": "^3.9.1",
+    "webpack": "^1.13.0",
+    "webpack-stream": "^3.2.0"
   },
   "dependencies": {
+    "angular": "^1.5.5",
+    "angular-animate": "^1.5.5",
+    "angular-aria": "^1.5.5",
+    "angular-base64": "^2.0.5",
+    "angular-material": "^1.0.8",
+    "angular-messages": "^1.5.5",
+    "angular-mocks": "^1.5.5",
+    "angular-route": "^1.5.5",
+    "angular-sanitize": "^1.5.5",
     "body-parser": "^1.15.0",
-    "express": "^4.13.4"
+    "bower": "^1.7.9",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^2.0.0-alpha",
+    "request": "^2.72.0"
   }
 }
