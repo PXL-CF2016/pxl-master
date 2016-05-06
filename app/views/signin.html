@@ -1,0 +1,16 @@
+<section class="entry-form" ng-controller="UserController as userctrl">
+  <div><button class="thebestbuttons" id="login-button" ng-hide="userlogin" ng-click="userlogin = userlogin == true ? false : true;">Login</button></div>
+  <div class="login">
+    <div>
+      <div ng-show="userlogin" class="hideByDefault">
+        <div class="login-triangle"></div>
+        <h2 class="login-header">Login</h2>
+        <form class="signin-form" ng-submit="userctrl.login(users)">
+          <input type="text" placeholder="username" ng-model="users.username">
+          <input type="password" placeholder="password" ng-model="users.password">
+          <input class=actionbutton type="submit" value="Login">
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

@@ -21,4 +21,10 @@ app.config(['$routeProvider', function(routeProvider){
     .when('/board', {
       templateUrl: './views/boardselect.html'
     })
+    .when('/createaccount', {
+      templateUrl: './views/createaccount.html'
+    })
+    .when('/usersignin', {
+      templateUrl: './views/signin.html'
+    })
 }]);

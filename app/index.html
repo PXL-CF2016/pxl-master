@@ -3,18 +3,20 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="index.css">
-    <title>PXL MSTR</title>
+    <title class="pxlmstrtitle">PXL MSTR</title>
     <style>.ng-cloak {display: none !important;}</style>
   </head>
 
-  <body>
+  <body class="body-style">
     <header>
-      <div class="logo"></div>
-        <h1 class="title">PXL MSTR</h1>
-        <custom-nav></custom-nav>
+      <!-- <img src="./img/pxllogo.png" alt=""> -->
+      <h1 class="title">PXL MSTR</h1>
     </header>
+    <nav>
+      <custom-nav></custom-nav>
+    </nav>
     <main ng-view>
-      <h1 class="main-title">LED Matrix Control</h1>
+
     </main>
     <footer></footer>
 
