@@ -5,8 +5,8 @@ const sourcemaps = require('gulp-sourcemaps');
 
 const sources = {
   html: __dirname + '/app/**/*.html',
-  js: __dirname + '/app/index.js'
-  // test: __dirname + '/test/*_spec.js',
+  js: __dirname + '/app/index.js',
+  test: __dirname + '/test/*_spec.js'
 };
 
 gulp.task('build:css', function() {
@@ -42,4 +42,4 @@ gulp.task('bundle:test', () => {
     .pipe(gulp.dest('./test'));
 });
 
-gulp.task('default', ['bundle:dev', 'build:css', 'copy']);
+gulp.task('default', ['bundle:dev', 'build:css', 'copy', 'bundle:test']);

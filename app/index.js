@@ -8,6 +8,7 @@ var app = angular.module('pxlMstr', ['ngRoute', 'checklist-model']);
 
 //CONTROLLER
 require(__dirname + '/services/auth-service.js')(app);
+// require(__dirname + '/services/refresh-service.js')(app);
 require(__dirname + '/directives/app-directives.js')(app);
 require(__dirname + '/controller/user-controller.js')(app);
 require(__dirname + '/controller/board-controller.js')(app);
