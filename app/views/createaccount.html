@@ -1,0 +1,16 @@
+<section class="entry-form" ng-controller="UserController as userctrl">
+  <div><button id="signup-button" ng-hide="newuser" ng-click="newuser = newuser === true ? false : true;">Create Account</button></div>
+  <div class="login">
+    <div>
+      <div ng-show="newuser" class="hideByDefault">
+        <div class="login-triangle"></div>
+        <h2 class="login-header">Create Account</h2>
+        <form class="signup-form" ng-submit="userctrl.createUser(newUser)">
+          <input type="text" placeholder="username" ng-model="newUser.username">
+          <input type="password" placeholder="password" ng-model="newUser.password">
+          <input class=actionbutton type="submit" value="Create Account">
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

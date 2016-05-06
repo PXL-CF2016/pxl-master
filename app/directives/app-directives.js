@@ -18,7 +18,14 @@ module.exports = function(app) {
   app.directive('userSignin', function() {
     return {
       restrict: 'E',
-      templateUrl: './templates/signin.html'
+      templateUrl: './views/signin.html'
+    };
+  });
+
+  app.directive('userCreateAccount', function() {
+    return {
+      restrict: 'E',
+      templateUrl: './views/createaccount.html'
     };
   });
 

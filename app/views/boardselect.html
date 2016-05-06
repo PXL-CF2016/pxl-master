@@ -1,9 +1,10 @@
-
 <section ng-controller="boardCtrl">
   <h1>What do you want to see?</h1>
-  <label ng-repeat="item in selects">
-    <input type="checkbox" checklist-model="checks" checklist-value="item">{{item}}
-  </label>
+  <div class="checklistbox">
+    <label ng-repeat="item in selects">
+      <input class="checkbox" type="checkbox" checklist-model="checks" checklist-value="item">{{item}}
+    </label>
+  </div>
   <br>
   <button ng-click="createJson()">Export</button>
 </section>
